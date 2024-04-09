@@ -9,7 +9,7 @@
 
 /* GENERAL SETTINGS */
 .container-big {
-    max-width: 400px;
+    width: auto;
     margin: 0 auto;
 }
 
@@ -50,6 +50,7 @@ header .row {
 
 .row {
     display: flex;
+    margin: 0 3rem;
 }
 
 .flex-wrap {
@@ -85,9 +86,17 @@ header .row {
     border: 1px solid black;
 }
 
+.get-started .container-big {
+    padding: 0 3rem;
+}
+
+.container-big .footer-text {
+    padding: 0 3rem;
+}
+
 /* COLUMNS*/
 .col-30 {
-    width: 30%;
+    width: 100%;
 }
 
 .col-33 {
@@ -113,15 +122,15 @@ header .row {
 }
 
 /* CARD PROPERTIES */
-.card-radius-2 {
-    height: 450px;
-    border-radius: 2rem;
+.card-radius-1 {
+    height: 300px;
+    border-radius: 1rem;
     border: 1px solid black;
 }
 
-.card-radius-5 {
-    border-radius: 5rem;
-    height: 500px;
+.card-radius-2 {
+    border-radius: 2rem;
+    height: 300px;
     border: 1px solid black;
 }
 
@@ -140,4 +149,79 @@ header .row {
 
 .b-dark {
     background-color: #2c2c2c;
+}
+
+/***************
+ADAPTABILITY
+***************/
+/* LAYOUT TABLET */
+@media screen and (min-width: 768px) {
+    .col-67 {
+        width: calc(67% - 0.9rem);
+    }
+
+    .jumbotron .col-33 {
+        width: calc(100% / 3 - 1.35rem);
+    }
+
+    .benefits .col-33 {
+        width: calc(100% / 2 - 1rem);
+    }
+
+    .benefits .container-big .text-align-center {
+        margin-bottom: 3rem;
+    }
+
+    .about .col-70 {
+        width: 60%;
+    }
+
+    .about .col-30 {
+        width: 40%;
+    }
+
+    .get-started .container-big {
+        padding: 0 5rem;
+    }
+
+    .footer-text {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .menu-header-mobile {
+        display: none;
+    }
+
+    .menu-header-desktop {
+        display: block;
+    }
+
+    .container-big {
+        max-width: 1000px;
+    }
+
+    .container-medium {
+        max-width: 800px;
+    }
+
+    .planning .col-50 {
+        width: calc(100% / 2);
+    }
+
+    .benefits .col-33 {
+        width: calc(100% / 3 - 1.35rem);
+    }
+
 }
