@@ -79,12 +79,16 @@ header .row {
     margin: 0 auto;
 }
 
-/* COLUMNS*/
-.col-33 {
-    width: 100%;
+.border {
+    border: 1px solid black;
 }
 
-.col-67 {
+/* COLUMNS*/
+.col-30 {
+    width: 30%;
+}
+
+.col-33 {
     width: 100%;
 }
 
@@ -92,6 +96,14 @@ header .row {
     width: 100%;
     height: 600px;
     border: 1px solid black;
+}
+
+.col-67 {
+    width: 100%;
+}
+
+.col-70 {
+    width: 100%;
 }
 
 .col-100 {
