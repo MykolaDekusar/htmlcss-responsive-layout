@@ -4,3 +4,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* GENERAL SETTINGS */
+
+
+/* HEADER */
+header {
+    background-color: #5DACFC;
+    padding: 0 1rem;
+}
+
+.menu-header-desktop {
+    display: none;
+}
+
+header .row {
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.jumbotron .container-big {
+    display: flex;
+    justify-content: center;
+}
+
+/* UTILITIES */
+.row {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-2rem {
+    gap: 2rem;
+}
+
+.min-width-480 {
+    min-width: 480px;
+}
+
+.padding-r-l-3rem {
+    padding: 0 3rem;
+}
+
+
+
+/* COLUMN SIZING */
+.col-33 {
+    width: 100%;
+}
+
+.col-67 {
+    width: 100%;
+}
+
+/* CARD PROPERTIES */
+.card {
+    height: 450px;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+/* COLORS */
+.b-azure {
+    background-color: #B3DBFB;
+}
