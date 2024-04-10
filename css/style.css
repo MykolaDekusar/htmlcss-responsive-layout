@@ -7,14 +7,17 @@
     font-size: 1.1rem;
 }
 
+/* ************************************** */
 /* GENERAL SETTINGS */
 .container-big {
     margin: 0 auto;
 }
 
+/* ************************************** */
 /* HEADER */
 header {
-    background-color: #5DACFC;
+    background-color: #0463c2;
+    padding: 1rem 0;
 }
 
 .menu-header-desktop {
@@ -22,25 +25,32 @@ header {
 }
 
 header .row {
-    padding: 1rem 0;
     justify-content: space-between;
+    align-items: center;
 }
 
+/* ************************************** */
 /* JUMBOTRON */
 .jumbotron .container-big {
     display: flex;
     justify-content: center;
 }
 
+.col-header {
+    padding-top: 0.4rem;
+}
+
 .jumbotron .row {
     width: 100%;
 }
 
+/* ************************************** */
 /* PLANNING */
 .planning {
     padding: 5rem 0;
 }
 
+/* ************************************** */
 /* UTILITIES */
 .text-align-center {
     text-align: center;
@@ -51,6 +61,10 @@ header .row {
     margin: 0 3rem;
 }
 
+.flex {
+    display: flex;
+}
+
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -59,9 +73,29 @@ header .row {
     gap: 2rem;
 }
 
+/* ************************************** */
+/* MARGINS */
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.margin-t-b-2rem {
+    margin: 2rem 0;
+}
+
 .margin-t-3rem-b-5rem {
     margin-top: 3rem;
     margin-bottom: 5rem;
+}
+
+.right-margin-05rem {
+    margin-right: 0.5rem;
+}
+
+/* ************************************** */
+/* PADDINGS */
+.padding-2-rem {
+    padding: 2rem;
 }
 
 .padding-r-l-3rem {
@@ -81,10 +115,6 @@ header .row {
     padding: 5rem 0;
 }
 
-.margin-0-auto {
-    margin: 0 auto;
-}
-
 .border {
     border: 1px solid black;
 }
@@ -97,6 +127,29 @@ header .row {
     padding: 0 3rem;
 }
 
+.small-icon {
+    font-size: 2rem;
+}
+
+/* ************************************** */
+/* FONT SIZES */
+.small-font {
+    font-size: 1.3rem;
+}
+
+.medium-font {
+    font-size: 1.7rem;
+}
+
+.big-font {
+    font-size: 4rem;
+}
+
+.big-icon-font {
+    font-size: 5rem;
+}
+
+/* ************************************** */
 /* COLUMNS*/
 .col-30 {
     width: 100%;
@@ -108,15 +161,15 @@ header .row {
 
 .col-50 {
     width: 100%;
-    height: 600px;
     border: 1px solid black;
+    height: 500px;
 }
 
 .col-header {
     width: 50%;
 }
 
-.col-67 {
+.col-big {
     width: 100%;
 }
 
@@ -128,20 +181,35 @@ header .row {
     width: 100%;
 }
 
+/* ************************************** */
 /* CARD PROPERTIES */
 .card-radius-1 {
-    height: 300px;
     border-radius: 1rem;
     border: 1px solid black;
 }
 
 .card-radius-2 {
     border-radius: 2rem;
-    height: 300px;
     border: 1px solid black;
 }
 
+/* ************************************** */
+/* IMAGE PROPERTIES */
+.img-style {
+    width: 100%;
+    transform: translate(0, 0.24rem);
+}
+
+/* ************************************** */
+/* BUTTON STYLE */
+.bttn-style {
+    padding: 1rem 4rem;
+    border: none;
+}
+
+/* ************************************** */
 /* COLORS */
+/* BACKGROUND COLORS */
 .b-azure {
     background-color: #B3DBFB;
 }
@@ -158,6 +226,12 @@ header .row {
     background-color: #2c2c2c;
 }
 
+.b-blue {
+    background-color: #0463c2;
+}
+
+/* ************************************** */
+/* TEXT COLORS */
 .c-white {
     color: white;
 }
@@ -170,12 +244,16 @@ header .row {
     color: #B3DBFB;
 }
 
+.c-blue {
+    color: #0463c2;
+}
+
 .c-orange {
     color: rgb(237, 158, 13);
 }
 
-.icon-zure {
-    color: #B3DBFB;
+.c-gray {
+    color: rgb(83, 83, 83);
 }
 
 /***************
@@ -183,14 +261,27 @@ ADAPTABILITY
 ***************/
 /* LAYOUT TABLET */
 @media screen and (min-width: 768px) {
-    .col-67 {
-        width: calc(67% - 0.9rem);
+
+    /* ************************************** */
+    /* JUMBOTRON SETTINGS */
+    .col-big {
+        width: calc(100% / 3 * 2 - 0.65rem);
     }
 
     .jumbotron .col-33 {
         width: calc(100% / 3 - 1.35rem);
     }
 
+    .jumbotron .col-33 .card-radius-1 {
+        height: 100%;
+    }
+
+    .jumbotron-phone-img {
+        width: 50%;
+    }
+
+    /* ************************************** */
+    /*BENEFITS SETTINGS */
     .benefits .col-33 {
         width: calc(100% / 2 - 1rem);
     }
@@ -199,6 +290,8 @@ ADAPTABILITY
         margin-bottom: 3rem;
     }
 
+    /* ************************************** */
+    /* ABOUT SETTINGS */
     .about .col-70 {
         width: 60%;
     }
@@ -207,19 +300,32 @@ ADAPTABILITY
         width: 40%;
     }
 
+    /* ************************************** */
+    /* GET STARTED SETTINGS */
     .get-started .container-big {
         padding: 0 5rem;
     }
 
+    /* ************************************** */
+    /* FOOTER SETTINGS */
     .footer-text {
         width: 60%;
         margin: 0 auto;
+    }
+
+    /* ************************************** */
+    /* GENERAL SETTINGS */
+    .medium-font {
+        font-size: 2rem;
     }
 
 }
 
 /* LAYOUT PC */
 @media screen and (min-width: 1200px) {
+
+    /* ************************************** */
+    /* HEADER SETTINGS */
     ul {
         list-style-type: none;
     }
@@ -228,8 +334,23 @@ ADAPTABILITY
         margin: 0;
     }
 
-    ul li {
+    .col-header {
+        width: 40%;
+    }
+
+    .menu-header-desktop ul li {
         display: inline-block;
+        margin-left: 0.5rem;
+    }
+
+    .menu-header-desktop ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-header-desktop ul li button {
+        border: none;
+        padding: 0.5rem 1rem;
     }
 
     .menu-header-mobile {
@@ -240,6 +361,8 @@ ADAPTABILITY
         display: inline-block;
     }
 
+    /* ************************************** */
+    /* CONTAINER SETTINGS */
     .container-big {
         max-width: 1100px;
     }
@@ -248,10 +371,34 @@ ADAPTABILITY
         max-width: 900px;
     }
 
+    /* ************************************** */
+    /* JUMBOTRON SECTION SETTINGS */
+    .col-big {
+        display: flex;
+    }
+
+    .col-big .padding-2-rem {
+        width: 60%;
+    }
+
+    .jumbotron-phone-img {
+        width: 40%;
+        align-self: flex-end;
+        padding-right: 2rem;
+    }
+
+    /* ************************************** */
+    /* PLANNING SECTION SETTINGS */
     .planning .col-50 {
         width: calc(100% / 2);
     }
 
+    .planning .col-50:last-child {
+        align-self: flex-end;
+    }
+
+    /* ************************************** */
+    /* BENEFITS SECTION SETTINGS */
     .benefits .col-33 {
         width: calc(100% / 3 - 1.35rem);
     }
