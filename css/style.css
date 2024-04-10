@@ -442,8 +442,9 @@ ADAPTABILITY
     /* FOOTER SETTINGS */
     .footer-text {
         width: 60%;
-        margin: 0 auto;
+        margin: 0 auto 2rem auto;
     }
+
 
     /* ************************************** */
     /* GENERAL SETTINGS */
