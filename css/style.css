@@ -152,8 +152,6 @@ header .row {
     padding: 0 3rem;
 }
 
-
-
 .margin-0-auto {
     margin: 0 auto;
 }
@@ -237,6 +235,15 @@ header .row {
     margin: 0 auto;
 }
 
+.about-img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
 .img-1 {
     background-image: url("../img/testimonial1.jpg");
 }
@@ -249,6 +256,17 @@ header .row {
     background-image: url("../img/testimonial3.jpg");
 }
 
+.img-4 {
+    background-image: url("../img/about.jpg");
+}
+
+/* ************************************** */
+/* QUOTE SETUP */
+.about-img i {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+}
 
 /* ************************************** */
 /* BUTTON STYLE */
@@ -380,11 +398,30 @@ ADAPTABILITY
     /* ABOUT SETTINGS */
     .about .col-70 {
         width: 60%;
+        padding-right: 5rem;
+        margin-bottom: 3rem;
     }
 
     .about .col-30 {
-        width: 40%;
+        width: 30%;
     }
+
+    .about .col-30 .margin-t-b-2rem {
+        margin-top: 0;
+    }
+
+    .about-img {
+        width: 15rem;
+        height: 15rem;
+        margin: 0 auto;
+    }
+
+    .about-img .fa-quote-left {
+        top: 1rem;
+        right: 0;
+    }
+
+
 
     /* ************************************** */
     /* GET STARTED SETTINGS */
@@ -454,7 +491,7 @@ ADAPTABILITY
     }
 
     .container-medium {
-        max-width: 900px;
+        max-width: 1000px;
     }
 
     /* ************************************** */
@@ -508,6 +545,17 @@ ADAPTABILITY
     /* BENEFITS SECTION SETTINGS */
     .benefits .col-33 {
         width: calc(100% / 3 - 1.35rem);
+    }
+
+    /* ************************************** */
+    /* ABOUT US SECTION SETTINGS */
+
+    .about .row {
+        justify-content: space-between;
+    }
+
+    .about .col-70 {
+        padding-right: 0;
     }
 
 }
