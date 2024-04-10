@@ -85,6 +85,10 @@ header .row {
     font-size: 1.5rem;
 }
 
+.get-started .container-big {
+    padding: 0;
+}
+
 /* ************************************** */
 /* MARGINS */
 .margin-0-auto {
@@ -275,6 +279,11 @@ header .row {
     border: none;
 }
 
+.bttn-style-big {
+    padding: 1rem 3.5rem;
+    border: none;
+}
+
 .bttn-circle {
     padding: 1.5rem 1.7rem;
     border: none;
@@ -323,7 +332,7 @@ header .row {
 }
 
 .c-orange {
-    color: rgb(237, 158, 13);
+    color: rgb(255, 188, 64);
 }
 
 .c-gray {
