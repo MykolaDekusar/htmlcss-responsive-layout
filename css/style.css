@@ -77,7 +77,7 @@ header .row {
     gap: 2rem;
 }
 
-.line-height-2rem {
+p {
     line-height: 2rem;
 }
 
@@ -222,8 +222,9 @@ header .row {
 /* ************************************** */
 /* IMAGE PROPERTIES */
 .img-style {
-    width: 100%;
-    transform: translate(0, 0.26rem);
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
 }
 
 .planning img {
@@ -293,6 +294,10 @@ header .row {
 /* ************************************** */
 /* COLORS */
 /* BACKGROUND COLORS */
+section:nth-child(2n) {
+    background-color: #9595E3;
+}
+
 .b-azure {
     background-color: #B3DBFB;
 }
@@ -305,7 +310,7 @@ header .row {
     background-color: white;
 }
 
-.b-dark {
+footer {
     background-color: #2c2c2c;
 }
 
